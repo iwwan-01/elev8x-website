@@ -15,25 +15,25 @@ const Nav = () => {
       {/* Navigation Links */}
       <div className='flex justify-center items-center gap-x-8 font-poppins font-light text-lg w-full'>
         <div className='relative group'>
-          <Link href='/about' className='h-full w-full'>
+          <Link href='/' className='h-full w-full'>
             About
           </Link>
           <div className='bg-black h-px w-0 absolute group-hover:w-full transition-all duration-300'></div>
         </div>
         <div className='relative group'>
-          <Link href='/services' className='h-full w-full'>
+          <Link href='/' className='h-full w-full'>
             Services
           </Link>
           <div className='bg-black h-px w-0 absolute group-hover:w-full transition-all duration-300'></div>
         </div>
         <div className='relative group'>
-          <Link href='/projects' className='h-full w-full'>
+          <Link href='/' className='h-full w-full'>
             Projects
           </Link>
           <div className='bg-black h-px w-0 absolute group-hover:w-full transition-all duration-300'></div>
         </div>
         <div className='relative group'>
-          <Link href='/contact' className='h-full w-full'>
+          <Link href='/' className='h-full w-full'>
             Contact
           </Link>
           <div className='bg-black h-px w-0 absolute group-hover:w-full transition-all duration-300'></div>
