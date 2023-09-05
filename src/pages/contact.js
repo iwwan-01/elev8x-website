@@ -1,5 +1,5 @@
 import ContactForm from "@/components/common/ContactForm";
-import TopTextField from "@/components/common/TopTextField";
+import TopTextField from "@/components/TopTextField";
 
 const Contact = () => {
   return (

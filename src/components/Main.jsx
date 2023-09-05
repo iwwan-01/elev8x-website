@@ -16,16 +16,6 @@ const Main = () => {
           </p>
         </div>
       </div>
-      {/* Main page content */}
-      <div className='pt-20 bg-neutral-100'>
-        <Frame title={'About us'}>
-          <AboutSummary />
-        </Frame>
-        <Frame title={'Our Services'}>
-          <ServicesSummary />
-        </Frame>
-      </div>
-      <Footer />
     </section>
     
   )
