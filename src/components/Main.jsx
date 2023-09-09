@@ -3,12 +3,10 @@ const Main = () => {
     <section>
       <div className='flex justify-center items-center p-14'>
         <div className='flex flex-col gap-y-6'>
-          <p className='text-black text-6xl font-bold font-poppins text-center'>
-            Welcome to elevateX
-          </p>
-          <p className='text-black text-6xl text-center font-poppins font-light '>
-            Unleash the digital potential of your business
-          </p>
+          <h1 className='text-black text-5xl text-center font-poppins font-bold mt-32'>
+            Unleash the <span className='text-orange'>digital potential</span>{' '}
+            of your business.
+          </h1>
         </div>
       </div>
     </section>
