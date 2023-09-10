@@ -127,12 +127,12 @@ const Nav = () => {
         {/* Navbar (desktop) Container */}
         <div className='flex justify-center items-center'>
           {/* Navbar (desktop) */}
-          <nav className='hidden p-4 lg:flex lg:justify-between rounded-full border w-[64rem]'>
+          <nav className='hidden p-4 lg:flex lg:justify-between lg:items-center rounded-full border w-[64rem]'>
             {/* Logo */}
             <div className='shrink-0 px-8'>
               <Link href='/'>
                 <Image
-                  className='w-20 h-8 xl:w-30'
+                  className='w-20 h-8 xl:w-30 mb-2'
                   priority
                   src={elev8xLogo}
                   alt='elev8x'
@@ -168,7 +168,7 @@ const Nav = () => {
                   onMouseOver={() => onHover(1)}
                   onMouseLeave={onLeave}
                 >
-                  <Link href='/#services'>Services</Link>
+                  <Link href='/'>Services</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
                 </div>
                 {/* Menu Item */}
@@ -177,7 +177,7 @@ const Nav = () => {
                   onMouseOver={() => onHover(2)}
                   onMouseLeave={onLeave}
                 >
-                  <Link href='/#projects'>Projects</Link>
+                  <Link href='/'>Projects</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
                 </div>
                 {/* Menu Item */}
@@ -186,7 +186,7 @@ const Nav = () => {
                   onMouseOver={() => onHover(3)}
                   onMouseLeave={onLeave}
                 >
-                  <Link href='/#contact'>Contact</Link>
+                  <Link href='/'>Contact</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
                 </div>
               </div>
