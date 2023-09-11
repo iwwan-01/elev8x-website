@@ -97,7 +97,7 @@ function ContactForm(){
                         <h2 className='font-bold'>Contacts</h2>
                         <p>+359 88 8888888</p>
                         <p>+359 88 8888888</p>
-                        <p>info@digit-solutions.com</p>
+                        <p>contact@elev8x.eu</p>
                     </div>
                 </div>
             </div>

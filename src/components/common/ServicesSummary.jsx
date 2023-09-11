@@ -6,23 +6,36 @@ const ServicesSummary = () => {
   return (
     <Frame title={'Our Services'}>
       <div className='flex flex-col'>
-        <div class='flex items-center justify-center gap-8 flex-row flex-wrap lg:flex-nowrap'>
+        <div className='flex items-center justify-center gap-8 flex-row flex-wrap lg:flex-nowrap'>
           <ServicesCard
-            title={'Software Development'}
+            title={'Enterprise Solutions'}
             text={
-              'We will mae your app line no one else. Just trust us it is not a scam, bro. Im writing this text to test the card. Dont focus in the text here and continue reading. Thanks!'
+              `
+              We offer custom software solutions, mobile app development, cloud solutions, 
+              and business process optimization. Our Agile project management ensures 
+              efficient and adaptable results to meet your unique business needs.
+              `
             }
           />
           <ServicesCard
-            title={'Mobile Development'}
+            title={'Web Development'}
             text={
-              'We will mae your app line no one else. Just trust us it is not a scam, bro. Im writing this text to test the card. Dont focus in the text here and continue reading. Thanks!'
+              `
+              We design appealing, user-friendly websites, offer custom front-end 
+              solutions, build e-commerce stores, provide ongoing maintenance, and 
+              optimize conversion rates through data-driven analysis.
+              `
             }
           />
           <ServicesCard
-            title={'UI/UX Design'}
+            title={'Marketing'}
             text={
-              'We will mae your app line no one else. Just trust us it is not a scam, bro. Im writing this text to test the card. Dont focus in the text here and continue reading. Thanks!'
+              `
+              We enhance online visibility through SEO, build brand recognition strategies,
+              maintain a strong online presence, and create tailored marketing strategies
+              across various digital channels. Our email marketing campaigns nurture leads 
+              and retain customers effectively.
+              `
             }
           />
         </div>
