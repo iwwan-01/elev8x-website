@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import WordChanger from './common/WordChanger'
-import triangleShape from '../../public/triangle_shape.png'
 
 const Main = () => {
   return (
