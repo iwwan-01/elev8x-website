@@ -1,12 +1,41 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
+import WordChanger from './common/WordChanger'
+import triangleShape from '../../public/triangle_shape.png'
+
 const Main = () => {
   return (
     <section>
-      <div className='flex justify-center items-center p-14'>
-        <div className='flex flex-col justify-center items-center gap-y-6 w-full'>
-          <h1 className='text-black text-4xl font-poppins font-bold'>
-            Unleash the <span className='text-orange'>digital potential </span>
-            of your business.
-          </h1>
+      <div className='flex justify-center items-center'>
+        <div className='flex flex-col-reverse md:flex-row justify-center items-center overflow-x-hidden lg:container gap-x-40 gap-y-16 px-14 py-24'>
+          {/* Sales Text Container */}
+          <div className='flex flex-col gap-y-4'>
+            <h3 className='font-poppins text-lg text-left font-normal'>
+              Your trusted digital partner
+            </h3>
+            <WordChanger />
+            <h2 className='text-black text-xl text-left font-poppins font-semibold mt-20 lg:mt-10 md:mt-8'>
+              Unleash the digital potential of your business.
+            </h2>
+            {/* CTA */}
+            <Link href='/'>
+              <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-110 transition-transform duration-100'>
+                <span className='uppercase font-bold text-white text-lg font-poppins'>
+                  Get started
+                </span>
+              </div>
+            </Link>
+          </div>
+
+          {/* Hero Container */}
+          <div className='flex justify-center items-center lg:pr-8'>
+            <div className='rounded-full border w-[200px] h-[350px] relative'></div>
+            <div className='absolute flex flex-col gap-y-4'>
+              <div class='w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-black border-r-[60px] border-r-transparent hover:border-b-orange transition-colors duration-300'></div>
+              <div class='w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-black border-r-[60px] border-r-transparent hover:rotate-180 transition-transform duration-300'></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

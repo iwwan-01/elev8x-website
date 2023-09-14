@@ -55,7 +55,7 @@ const Nav = () => {
           {/* Main Wrapper */}
           <div className='flex flex-row justify-center py-4 px-8'>
             {/* Logo */}
-            <div className='shrink-0 w-full'>
+            <div className='shrink-0 w-full md:px-8 px-4'>
               <Link href='/'>
                 <Image
                   className='w-24 h-12 xl:w-32'
@@ -73,7 +73,7 @@ const Nav = () => {
                 {/* xMark Icon */}
                 <div
                   onClick={toggleMenu}
-                  className='flex shrink-0 justify-center items-center'
+                  className='flex shrink-0 justify-center items-center py-4'
                 >
                   <FontAwesomeIcon
                     icon={faXmark}
@@ -88,7 +88,7 @@ const Nav = () => {
                 {/* Hamburger Icon */}
                 <div
                   onClick={toggleMenu}
-                  className='flex shrink-0 justify-center items-center'
+                  className='flex shrink-0 justify-center items-center py-4'
                 >
                   <FontAwesomeIcon
                     icon={faBars}
