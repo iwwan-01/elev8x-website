@@ -6,11 +6,11 @@ const USP = () => {
       {/* Main Container */}
       <div className='flex justify-center items-center overflow-x-hidden'>
         <div className='flex justify-center items-center container'>
-          <div className='lg:px-64 py-14'>
-            <div className='bg-orange h-full w-full font-poppins rounded-3xl '>
-              <div className='flex flex-col gap-y-12 w-full p-14'>
+          <div className='w-full lg:w-[63rem] py-14'>
+            <div className='bg-orange rounded-3xl font-poppins'>
+              <div className='flex flex-col gap-y-12 p-20'>
                 {/* Headline Container */}
-                <div className='flex flex-col gap-y-4 w-full'>
+                <div className='flex flex-col gap-y-4'>
                   <h3 className='uppercase font-bold text-lg text-white'>
                     Why choose elev8x
                   </h3>
@@ -19,8 +19,8 @@ const USP = () => {
                   </h1>
                 </div>
                 {/* Body Container  */}
-                <div className='flex flex-col text-xl font-semibold text-white gap-y-12 w-full'>
-                  <p>Elev8x isn't your typical digital agency.</p>
+                <div className='flex flex-col text-lg font-semibold text-white gap-y-10'>
+                  <p>Elev8x is not your typical digital agency.</p>
                   <p>
                     We are your passionate partner in the journey of elevating,
                     innovating, and optimizing your business.
@@ -43,9 +43,9 @@ const USP = () => {
                 </div>
                 {/* CTA */}
                 <Link href='/'>
-                  <div className='group flex justify-center items-center mt-2 bg-dark-blue rounded-full w-full h-14 hover:bg-orange transition-color duration-300 whitespace-nowrap'>
-                    <span className='uppercase font-bold text-white lg:text-lg md:text-md font-poppins'>
-                      Start your journey with us now
+                  <div className='group flex justify-center items-center mt-4 bg-dark-blue w-72 h-14 hover:bg-orange transition-color duration-300 whitespace-nowrap'>
+                    <span className=' font-semibold text-white lg:text-lg md:text-md font-poppins'>
+                      Start your journey now
                     </span>
                   </div>
                 </Link>
