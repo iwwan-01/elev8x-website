@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <section>
       <div className='flex justify-center items-center'>
-        <div className='flex flex-col-reverse md:flex-row justify-center items-center overflow-x-hidden lg:container gap-x-40 gap-y-16 px-14 py-24'>
+        <div className='flex flex-col-reverse md:flex-row justify-center items-center overflow-x-hidden lg:container gap-x-40 gap-y-16 px-14 py-48'>
           {/* Sales Text Container */}
           <div className='flex flex-col gap-y-4'>
             <h3 className='font-poppins text-lg text-left font-normal'>
@@ -19,7 +19,7 @@ const Main = () => {
             </h2>
             {/* CTA */}
             <Link href='/'>
-              <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-110 transition-transform duration-100'>
+              <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-105 transition-transform duration-300'>
                 <span className='uppercase font-bold text-white text-lg font-poppins'>
                   Get started
                 </span>
@@ -31,8 +31,8 @@ const Main = () => {
           <div className='flex justify-center items-center lg:pr-8'>
             <div className='rounded-full border w-[200px] h-[350px] relative'></div>
             <div className='absolute flex flex-col gap-y-4'>
-              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-black border-r-[60px] border-r-transparent hover:border-b-orange transition-colors duration-300'></div>
-              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-black border-r-[60px] border-r-transparent hover:rotate-180 transition-transform duration-300'></div>
+              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-dark-blue border-r-[60px] border-r-transparent hover:border-b-orange transition-colors duration-300'></div>
+              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-dark-blue border-r-[60px] border-r-transparent hover:rotate-180 transition-transform duration-300'></div>
             </div>
           </div>
         </div>

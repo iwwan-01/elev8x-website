@@ -49,9 +49,9 @@ const Nav = () => {
   return (
     <>
       {/* Navbar Container */}
-      <div className='bg-white sticky top-5 w-full z-50'>
+      <div className='fixed lg:top-5 w-full z-50'>
         {/* Navbar (mobile + tablet) */}
-        <nav className='lg:hidden'>
+        <nav className='lg:hidden bg-white rounded-b-3xl'>
           {/* Main Wrapper */}
           <div className='flex flex-row justify-center py-4 px-8'>
             {/* Logo */}
@@ -127,7 +127,7 @@ const Nav = () => {
         {/* Navbar (desktop) Container */}
         <div className='flex justify-center items-center'>
           {/* Navbar (desktop) */}
-          <nav className='hidden p-4 lg:flex lg:justify-between lg:items-center rounded-full border w-[64rem]'>
+          <nav className='hidden p-4 lg:flex lg:justify-between lg:items-center rounded-full border bg-white w-[64rem]'>
             {/* Logo */}
             <div className='shrink-0 px-8'>
               <Link href='/'>
