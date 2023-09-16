@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import WordChanger from './common/WordChanger'
 
@@ -31,8 +31,8 @@ const Main = () => {
           <div className='flex justify-center items-center lg:pr-8'>
             <div className='rounded-full border w-[200px] h-[350px] relative'></div>
             <div className='absolute flex flex-col gap-y-4'>
-              <div class='w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-black border-r-[60px] border-r-transparent hover:border-b-orange transition-colors duration-300'></div>
-              <div class='w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-black border-r-[60px] border-r-transparent hover:rotate-180 transition-transform duration-300'></div>
+              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-black border-r-[60px] border-r-transparent hover:border-b-orange transition-colors duration-300'></div>
+              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-black border-r-[60px] border-r-transparent hover:rotate-180 transition-transform duration-300'></div>
             </div>
           </div>
         </div>
