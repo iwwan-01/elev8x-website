@@ -27,7 +27,7 @@ const PageScrollTop = () => {
 
   return (
     <div
-      className='fixed bottom-7 right-7 cursor-pointer rounded-full drop-shadow-lg w-9 h-9 bg-white flex justify-center items-center p-2 hover:scale-110 transition-transform duration-500'
+      className='fixed bottom-7 right-7 cursor-pointer rounded-xl border border-neutral-200 drop-shadow-lg w-9 h-11 bg-white flex justify-center items-center p-2'
       onClick={scrollToTop}
       style={{
         visibility: isVisible ? 'visible' : 'hidden',
