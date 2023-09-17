@@ -6,7 +6,7 @@ const USP = () => {
       {/* Main Container */}
       <div className='flex justify-center items-center overflow-x-hidden'>
         <div className='flex justify-center items-center container'>
-          <div className='w-full lg:w-[63rem] py-14'>
+          <div className='w-full lg:w-[63rem] py-24'>
             <div className='bg-orange rounded-3xl font-poppins'>
               <div className='flex flex-col gap-y-12 p-20'>
                 {/* Headline Container */}

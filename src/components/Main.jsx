@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <section>
       <div className='flex justify-center items-center'>
-        <div className='flex flex-col-reverse md:flex-row justify-center items-center overflow-x-hidden lg:container gap-x-40 gap-y-16 px-14 py-48'>
+        <div className='flex flex-col-reverse md:flex-row justify-center items-center overflow-x-hidden lg:container gap-x-40 gap-y-16 px-14 pt-48 pb-24'>
           {/* Sales Text Container */}
           <div className='flex flex-col gap-y-4'>
             <h3 className='font-poppins text-lg text-left font-normal'>
@@ -19,7 +19,7 @@ const Main = () => {
             </h2>
             {/* CTA */}
             <Link href='/'>
-              <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-105 transition-transform duration-300'>
+              <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-110 transition-transform duration-300'>
                 <span className='uppercase font-bold text-white text-lg font-poppins'>
                   Get started
                 </span>
