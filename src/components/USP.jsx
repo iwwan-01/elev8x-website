@@ -43,7 +43,7 @@ const USP = () => {
                 </div>
                 {/* CTA */}
                 <Link href='/'>
-                  <div className='group flex justify-center items-center mt-4 bg-dark-blue w-72 h-14 hover:bg-orange transition-color duration-300 whitespace-nowrap'>
+                  <div className='group flex justify-center items-center mt-4 bg-dark-blue lg:w-72 w-56 h-14 hover:bg-orange transition-color duration-300 whitespace-nowrap'>
                     <span className=' font-semibold text-white lg:text-lg md:text-md font-poppins'>
                       Start your journey now
                     </span>

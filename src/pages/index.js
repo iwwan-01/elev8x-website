@@ -1,7 +1,9 @@
 import Main from '../components/Main'
 import USP from '../components/USP'
 import Services from '../components/Services'
-import PageScrollTop from '@/components/common/PageScrollTop'
+import Projects from '../components/Projects'
+
+import PageScrollTop from '../components/common/PageScrollTop'
 
 const index = () => {
   return (
@@ -9,6 +11,7 @@ const index = () => {
       <Main />
       <USP />
       <Services />
+      <Projects />
       <PageScrollTop />
     </>
   )

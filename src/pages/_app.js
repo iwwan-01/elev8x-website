@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
   return (
     <div className={`${poppins.variable}`}>
       <Head>
-        <title>elev8x | Unleash the digital potential of your business</title>t
+        <title>elev8x | Unleash the digital potential of your business</title>
       </Head>
       <Nav />
       <Component {...pageProps} />
