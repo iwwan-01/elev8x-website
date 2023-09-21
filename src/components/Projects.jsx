@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import budgitProjectPicture from '../../public/BudgITProjectPicture.png'
+import budgitProjectPicture from '../../public/BudgitProjectPicture.png'
 import innotopiaProjectPicture from '../../public/InnotopiaProjectPicture.png'
 
 import { FaReact, FaNodeJs } from 'react-icons/fa'
@@ -144,3 +144,4 @@ const Projects = () => {
   )
 }
 export default Projects
+n
