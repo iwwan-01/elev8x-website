@@ -58,13 +58,19 @@ const Footer = () => {
                 Working Hours
               </h1>
             </div>
-            <div className='font-poppins whitespace-nowrap text-white text-md'>
-              <h3 className='font-semibold'>Monday - Friday</h3>
-              <h4 className='font-light'>08:00AM - 6:00PM</h4>
-              <h3 className='font-semibold'>Saturday</h3>
-              <h4 className='font-light'>10:00AM - 4:00PM</h4>
-              <h3 className='font-semibold'>Sunday</h3>
-              <h4 className='font-light'>Closed</h4>
+            <div className='flex flex-col font-poppins whitespace-nowrap text-white text-md gap-y-2'>
+              <div className='flex flex-col gap-y-1'>
+                <h3 className='font-semibold'>Monday - Friday</h3>
+                <h4 className='font-light'>08:00AM - 6:00PM</h4>
+              </div>
+              <div className='flex flex-col gap-y-1'>
+                <h3 className='font-semibold'>Saturday</h3>
+                <h4 className='font-light'>10:00AM - 4:00PM</h4>
+              </div>
+              <div className='flex flex-col gap-y-1'>
+                <h3 className='font-semibold'>Sunday</h3>
+                <h4 className='font-light'>Closed</h4>
+              </div>
             </div>
           </div>
         </div>
