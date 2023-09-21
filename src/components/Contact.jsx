@@ -28,10 +28,6 @@ const Contact = () => {
             </div>
             {/* Form Container */}
             <div className='rounded-xl border-neutral-200 border w-full h-full z-0 p-6'>
-              {/* Heading Container */}
-              <div className='p-2 pl-3'>
-                <h3 className='text-md font-bold uppercase'>Let's Talk!</h3>
-              </div>
               <form className='flex flex-col p-2' onSubmit={handleSubmit}>
                 {/* Input Wrapper */}
                 <div className='flex flex-col lg:flex-row gap-x-6'>
