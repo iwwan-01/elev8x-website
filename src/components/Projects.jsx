@@ -91,13 +91,14 @@ const Projects = () => {
                   </h3>
                   <p className='font-normal text-md'>
                     Innotopia is a company based in Groningen, Netherlands that
-                    is a rebrand of the company &apos;Indietopia&apos;. The new
-                    company expands on the previous business model and offers
-                    all kind of different creative digital solutions with a
-                    focus on digital transformation and innovation acceleration.
-                    The development process includes creating design, selecting
-                    relevant technologies based on the client requirements,
-                    development and testing.
+                    is part of the rebranding strategy of the company
+                    &apos;Indietopia&apos;. The new company expands on the
+                    previous business model and offers all kind of different
+                    creative digital solutions with a focus on digital
+                    transformation and innovation acceleration. The development
+                    process includes creating design, selecting relevant
+                    technologies based on the client requirements, development
+                    and testing.
                   </p>
                   <h4 className='font-semibold text-lg'>Tech Stack:</h4>
                   {/* Tech Stack Container */}
