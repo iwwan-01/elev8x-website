@@ -24,7 +24,7 @@ const Contact = () => {
             {/* Heading Container */}
             <div className='flex flex-col lg:px-20 px-10 gap-y-4'>
               <h3 className='text-xl uppercase font-bold'>Contact us</h3>
-              <h1 className='text-6xl font-bold'>Let's Talk!</h1>
+              <h1 className='text-6xl font-bold'>Let&apos;s Talk!</h1>
             </div>
             {/* Form Container */}
             <div className='rounded-xl border-neutral-200 border w-full h-full z-0 p-6'>
