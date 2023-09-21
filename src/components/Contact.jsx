@@ -105,7 +105,7 @@ const Contact = () => {
                   ></textarea>
                   {/* Send Button */}
                   <input
-                    className='flex justify-center items-center rounded-3xl bg-orange uppercase font-bold cursor-pointer w-full h-10 mt-4 mb-0'
+                    className='flex justify-center items-center rounded-3xl bg-orange uppercase text-white font-bold cursor-pointer w-full h-10 mt-4 mb-0'
                     type='submit'
                     value='Send'
                   />
