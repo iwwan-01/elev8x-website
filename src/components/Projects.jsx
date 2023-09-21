@@ -107,7 +107,7 @@ const Projects = () => {
                   </div>
                   <div className='flex flex-row gap-x-4'>
                     {/* CTA */}
-                    <Link href='/'>
+                    <Link href='/#contact'>
                       <div className='group flex justify-center items-center mt-4 bg-dark-blue w-36 h-12 rounded-3xl drop-shadow-sm hover:bg-orange transition-color duration-300'>
                         <span className=' font-semibold text-white lg:text-lg md:text-md font-poppins'>
                           Learn More
