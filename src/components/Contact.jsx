@@ -18,7 +18,7 @@ const Contact = () => {
     <section id='contact' className='scroll-mt-10'>
       {/* Main Wrapper */}
       <div className='flex justify-center items-center overflow-x-hidden'>
-        <div className='flex flex-col gap-x-8 gap-y-16 py-24 lg:w-[63rem] w-full container'>
+        <div className='flex flex-col gap-x-8 gap-y-16 py-24 lg:w-[53rem] w-full container'>
           {/* Heading Container */}
           <div className='flex flex-col lg:px-20 px-10 gap-y-4 font-poppins'>
             <h3 className='text-xl uppercase font-bold'>Contact us</h3>
