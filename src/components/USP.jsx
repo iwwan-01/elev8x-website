@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const USP = () => {
   return (
-    <section>
+    <section id='about' className='scroll-mt-10'>
       {/* Main Container */}
       <div className='flex justify-center items-center overflow-x-hidden'>
         <div className='flex justify-center items-center container'>
@@ -42,7 +42,7 @@ const USP = () => {
                   </p>
                 </div>
                 {/* CTA */}
-                <Link href='/'>
+                <Link href='/#contact'>
                   <div className='group flex justify-center items-center mt-4 bg-dark-blue lg:w-72 w-56 h-14 hover:bg-orange transition-color duration-300 whitespace-nowrap'>
                     <span className=' font-semibold text-white lg:text-lg md:text-md font-poppins'>
                       Start your journey now

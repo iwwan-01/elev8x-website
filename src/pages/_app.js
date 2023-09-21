@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import Head from 'next/head'
 
 import Nav from '../components/common/Nav'
+import Footer from '../components/common/Footer'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Nav />
       <Component {...pageProps} />
+      <Footer />
     </div>
   )
 }

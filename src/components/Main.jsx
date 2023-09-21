@@ -18,7 +18,7 @@ const Main = () => {
               Unleash the digital potential of your business.
             </h2>
             {/* CTA */}
-            <Link href='/'>
+            <Link href='/#contact'>
               <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-105 transition-transform duration-300'>
                 <span className='uppercase font-bold text-white text-lg font-poppins'>
                   Get started

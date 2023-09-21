@@ -105,7 +105,7 @@ const Nav = () => {
             <>
               {/* Menu Items */}
               <div className='flex flex-col justify-center items-center gap-y-6 p-4 font-poppins text-md font-bold'>
-                <Link href='/' onClick={() => setIsOpen(!isOpen)}>
+                <Link href='/#about' onClick={() => setIsOpen(!isOpen)}>
                   <span>About</span>
                 </Link>
 
@@ -117,7 +117,7 @@ const Nav = () => {
                   <span>Projects</span>
                 </Link>
 
-                <Link href='/#testimonials' onClick={() => setIsOpen(!isOpen)}>
+                <Link href='/#contact' onClick={() => setIsOpen(!isOpen)}>
                   <span>Contact</span>
                 </Link>
               </div>
@@ -159,7 +159,7 @@ const Nav = () => {
                   onMouseOver={() => onHover(0)}
                   onMouseLeave={onLeave}
                 >
-                  <Link href='/'>About</Link>
+                  <Link href='/#about'>About</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
                 </div>
                 {/* Menu Item */}
@@ -168,7 +168,7 @@ const Nav = () => {
                   onMouseOver={() => onHover(1)}
                   onMouseLeave={onLeave}
                 >
-                  <Link href='/'>Services</Link>
+                  <Link href='/#services'>Services</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
                 </div>
                 {/* Menu Item */}
@@ -177,7 +177,7 @@ const Nav = () => {
                   onMouseOver={() => onHover(2)}
                   onMouseLeave={onLeave}
                 >
-                  <Link href='/'>Projects</Link>
+                  <Link href='/#projects'>Projects</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
                 </div>
                 {/* Menu Item */}
@@ -186,7 +186,7 @@ const Nav = () => {
                   onMouseOver={() => onHover(3)}
                   onMouseLeave={onLeave}
                 >
-                  <Link href='/'>Contact</Link>
+                  <Link href='/#contact'>Contact</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
                 </div>
               </div>

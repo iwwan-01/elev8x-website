@@ -9,9 +9,9 @@ import { SiSanity, SiMongodb, SiExpress, SiNextdotjs } from 'react-icons/si'
 
 const Projects = () => {
   return (
-    <section>
+    <section id='projects' className='scroll-mt-10'>
       <div className='flex justify-center items-center overflow-x-hidden'>
-        <div className='flex flex-col gap-y-12'>
+        <div className='flex flex-col gap-y-12 py-24'>
           {/* Headline Text */}
           <div className='flex flex-col gap-y-4 lg:px-20 px-10'>
             <h3 className='font-poppins uppercase font-bold text-lg'>
@@ -51,7 +51,7 @@ const Projects = () => {
                   </div>
                   <div className='flex flex-row gap-x-4'>
                     {/* CTA */}
-                    <Link href='/'>
+                    <Link href='/#contact'>
                       <div className='group flex justify-center items-center mt-4 bg-dark-blue w-36 h-12 rounded-3xl drop-shadow-sm hover:bg-orange transition-color duration-300'>
                         <span className=' font-semibold text-white lg:text-lg md:text-md font-poppins'>
                           Learn More
@@ -114,13 +114,10 @@ const Projects = () => {
                         </span>
                       </div>
                     </Link>
-                    <Link
-                      href='https://xd.adobe.com/view/812e55e4-d2f9-4a37-a876-27c05845113a-d47d/?fullscreen&hints=off'
-                      target='blank'
-                    >
-                      <div className='group flex justify-center items-center mt-4 bg-white border border-neutral-200 w-36 h-12 rounded-3xl drop-shadow-sm hover:bg-dark-blue hover:border-none transition-color duration-300'>
-                        <span className=' font-semibold lg:text-lg md:text-md group-hover:text-white font-poppins'>
-                          Preview
+                    <Link href='/#contact' target='blank'>
+                      <div className='group flex justify-center items-center mt-4 bg-white border border-neutral-200 w-40 h-12 rounded-3xl drop-shadow-sm hover:bg-dark-blue hover:border-none transition-color duration-300'>
+                        <span className='font-semibold lg:text-lg md:text-md group-hover:text-white font-poppins'>
+                          Coming Soon
                         </span>
                       </div>
                     </Link>

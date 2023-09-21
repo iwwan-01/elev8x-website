@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Services = () => {
   return (
-    <section>
+    <section id='services' className='scroll-mt-10'>
       <div className='flex flex-col justify-center items-center'>
         <div className='flex flex-col font-poppins gap-y-12 py-24 lg:w-[63rem] w-full container'>
           {/* Headline Text */}
