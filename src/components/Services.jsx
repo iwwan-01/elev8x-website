@@ -63,7 +63,7 @@ const Services = () => {
             </div>
           </div>
           <div className='flex justify-center items-center'>
-            <Link href=''>
+            <Link href='/#contact'>
               <div className='px-10 py-3 border rounded-3xl w-full relative group flex justify-center items-center overflow-x-hidden bg-white border-neutral-200'>
                 <span className='absolute h-full w-0 inset-0 transition-all group-hover:bg-orange group-hover:w-full duration-500 z-0'></span>
                 <span className='text-md font-medium z-10 group-hover:text-white transition-colors duration-500'>
