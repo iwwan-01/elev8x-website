@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import elev8xLogo from '../../../public/elev8x_logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -45,6 +45,44 @@ const Nav = () => {
   const onLeave = () => {
     setVisiblity('invisible')
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 560) {
+        setVisiblity('invisible')
+      }
+
+      if (window.scrollY >= 560) {
+        setPosition(10)
+        setWidth(70)
+        setVisiblity('visible')
+      }
+
+      if (window.scrollY >= 1660) {
+        setPosition(95)
+        setWidth(95)
+        setVisiblity('visible')
+      }
+
+      if (window.scrollY >= 2380) {
+        setPosition(200)
+        setWidth(100)
+        setVisiblity('visible')
+      }
+
+      if (window.scrollY >= 4660) {
+        setPosition(310)
+        setWidth(90)
+        setVisiblity('visible')
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <>
