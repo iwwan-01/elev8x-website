@@ -31,8 +31,7 @@ const USP = () => {
                     business goals.
                   </p>
                   <h2 className='text-4xl font-bold'>
-                    We are not here to dictate instead we are here to
-                    collaborate.
+                    We are not here to dictate, we are here to collaborate.
                   </h2>
                   <p>
                     We listen intently, learn deeply, and grasp the nuances of

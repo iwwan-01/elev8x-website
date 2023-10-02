@@ -3,9 +3,20 @@ import Link from 'next/link'
 
 import budgitProjectPicture from '../../public/BudgitProjectPicture.png'
 import innotopiaProjectPicture from '../../public/InnotopiaProjectPicture.png'
+import carOfferDataExtraction from '../../public/CarOfferDataExtractionProjectPicture.png'
 
 import { FaReact, FaNodeJs } from 'react-icons/fa'
-import { SiSanity, SiMongodb, SiExpress, SiNextdotjs } from 'react-icons/si'
+import {
+  SiSanity,
+  SiMongodb,
+  SiExpress,
+  SiNextdotjs,
+  SiAmazonaws,
+  SiAmazoncloudwatch,
+  SiAwslambda,
+  SiAmazons3,
+  SiAmazondynamodb,
+} from 'react-icons/si'
 
 const Projects = () => {
   return (
@@ -129,6 +140,73 @@ const Projects = () => {
                     className='w-full h-full object-contain'
                     src={innotopiaProjectPicture}
                     alt='Innotopia Project Picture'
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Project Card */}
+            <div className='flex flex-col overflow-hidden border rounded-3xl bg-white border-neutral-200 h-full w-full gap-y-2 p-8 font-poppins'>
+              <div className='flex lg:flex-row flex-col-reverse gap-y-10 gap-x-12 p-4'>
+                <div className='flex flex-col gap-y-4 w-full'>
+                  <h1 className='font-bold text-4xl'>
+                    Car Advertisements Data Extraction
+                  </h1>
+                  <h3 className='font-semibold text-lg'>Web Scraping</h3>
+                  <p className='font-normal text-md'>
+                    The solution ensures efficient data extraction, processing,
+                    and storage, while offering features such as price history
+                    tracking, notifications for specific offers, and data
+                    enrichment with safety ratings and fuel efficiency
+                    information. It implements a serverless architecture to
+                    provide cost-efficiency, reliability, and continuous
+                    monitoring to ensure the processes are executed correctly.
+                  </p>
+                  <h4 className='font-semibold text-lg'>Tech Stack:</h4>
+                  {/* Tech Stack Container */}
+                  <div className='flex flex-row gap-x-4'>
+                    <SiAmazonaws className='w-8 h-8' width={150} height={150} />
+                    <SiAmazoncloudwatch
+                      className='w-8 h-8'
+                      width={150}
+                      height={150}
+                    />
+                    <SiAwslambda className='w-8 h-8' width={150} height={150} />
+                    <SiAmazons3 className='w-8 h-8' width={150} height={150} />
+                    <SiAmazondynamodb
+                      className='w-8 h-8'
+                      width={150}
+                      height={150}
+                    />
+                  </div>
+                  <div className='flex flex-row gap-x-4'>
+                    {/* CTA */}
+                    <Link href='/#contact'>
+                      <div className='group flex justify-center items-center mt-4 bg-dark-blue w-36 h-12 rounded-3xl drop-shadow-sm hover:bg-orange transition-color duration-300'>
+                        <span className=' font-semibold text-white lg:text-lg md:text-md font-poppins'>
+                          Learn More
+                        </span>
+                      </div>
+                    </Link>
+                    <Link
+                      href='https://github.com/tyordanovv/CarPriceProject'
+                      target='_blank'
+                    >
+                      <div className='group flex justify-center items-center mt-4 bg-white border border-neutral-200 w-40 h-12 rounded-3xl drop-shadow-sm hover:bg-dark-blue hover:border-none transition-color duration-300'>
+                        <span className='font-semibold lg:text-lg md:text-md group-hover:text-white font-poppins'>
+                          Preview
+                        </span>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+                <div className='flex justify-center items-center rounded-3xl border drop-shadow-md border-neutral-200 w-full overflow-hidden'>
+                  <Image
+                    className='w-full h-full object-contain'
+                    src={carOfferDataExtraction}
+                    alt='Car Offer Data Extraction'
                     width={1920}
                     height={1080}
                   />
