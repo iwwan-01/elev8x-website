@@ -1,14 +1,19 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import elev8xLogo from '../../../public/elev8x_logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
-  // Scroll Observer
+  const aboutLinkRef = useRef()
+  const servicesLinkRef = useRef()
+  const projectsLinkRef = useRef()
+  const contactLinkRef = useRef()
+
+  // Scroll Intersection Observer
   useEffect(() => {
     let mainRef = document.getElementById('main')
     let aboutRef = document.getElementById('about')
@@ -16,43 +21,25 @@ const Nav = () => {
     let projectsRef = document.getElementById('projects')
     let contactRef = document.getElementById('contact')
 
-    let aboutLinkRef = document.getElementById('aboutLink')
-    let servicesLinkRef = document.getElementById('servicesLink')
-    let projectsLinkRef = document.getElementById('projectsLink')
-    let contactLinkRef = document.getElementById('contactLink')
-
     const handleIntersect = (entries) => {
       entries.forEach((entry) => {
         if (entry.target.id == 'main' && entry.isIntersecting) {
           observerOptions.threshold = 1.0
           setVisiblity('invisible')
-          aboutLinkRef.classList.remove('text-white')
+          aboutLinkRef.current.classList.remove('text-white')
+          servicesLinkRef.current.classList.remove('text-white')
+          projectsLinkRef.current.classList.remove('text-white')
+          contactLinkRef.current.classList.remove('text-white')
         } else if (entry.target.id == 'about' && entry.isIntersecting) {
           observerOptions.threshold = 0.25
           onHover(0)
-          aboutLinkRef.classList.add('text-white')
-          servicesLinkRef.classList.remove('text-white')
-          projectsLinkRef.classList.remove('text-white')
-          contactLinkRef.classList.remove('text-white')
         } else if (entry.target.id == 'services' && entry.isIntersecting) {
           onHover(1)
-          servicesLinkRef.classList.add('text-white')
-          aboutLinkRef.classList.remove('text-white')
-          projectsLinkRef.classList.remove('text-white')
-          contactLinkRef.classList.remove('text-white')
         } else if (entry.target.id == 'projects' && entry.isIntersecting) {
           observerOptions.threshold
           onHover(2)
-          projectsLinkRef.classList.add('text-white')
-          aboutLinkRef.classList.remove('text-white')
-          servicesLinkRef.classList.remove('text-white')
-          contactLinkRef.classList.remove('text-white')
         } else if (entry.target.id == 'contact' && entry.isIntersecting) {
           onHover(3)
-          contactLinkRef.classList.add('text-white')
-          aboutLinkRef.classList.remove('text-white')
-          servicesLinkRef.classList.remove('text-white')
-          projectsLinkRef.classList.remove('text-white')
         }
       })
     }
@@ -86,21 +73,37 @@ const Nav = () => {
     if (index == 0) {
       setPosition(10)
       setWidth(70)
+      aboutLinkRef.current.classList.add('text-white')
+      servicesLinkRef.current.classList.remove('text-white')
+      projectsLinkRef.current.classList.remove('text-white')
+      contactLinkRef.current.classList.remove('text-white')
     }
 
     if (index == 1) {
       setPosition(95)
       setWidth(95)
+      servicesLinkRef.current.classList.add('text-white')
+      aboutLinkRef.current.classList.remove('text-white')
+      projectsLinkRef.current.classList.remove('text-white')
+      contactLinkRef.current.classList.remove('text-white')
     }
 
     if (index == 2) {
       setPosition(200)
       setWidth(100)
+      projectsLinkRef.current.classList.add('text-white')
+      aboutLinkRef.current.classList.remove('text-white')
+      servicesLinkRef.current.classList.remove('text-white')
+      contactLinkRef.current.classList.remove('text-white')
     }
 
     if (index == 3) {
       setPosition(310)
       setWidth(90)
+      contactLinkRef.current.classList.add('text-white')
+      aboutLinkRef.current.classList.remove('text-white')
+      servicesLinkRef.current.classList.remove('text-white')
+      projectsLinkRef.current.classList.remove('text-white')
     }
   }
 
@@ -221,9 +224,10 @@ const Nav = () => {
                 {/* Menu Item */}
                 <div
                   id='aboutLink'
-                  className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
-                  onMouseOver={() => onHover(0)}
+                  className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onMouseEnter={() => onHover(0)}
                   onMouseLeave={onLeave}
+                  ref={aboutLinkRef}
                 >
                   <Link href='/#about'>About</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
@@ -231,9 +235,10 @@ const Nav = () => {
                 {/* Menu Item */}
                 <div
                   id='servicesLink'
-                  className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
-                  onMouseOver={() => onHover(1)}
+                  className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onMouseEnter={() => onHover(1)}
                   onMouseLeave={onLeave}
+                  ref={servicesLinkRef}
                 >
                   <Link href='/#services'>Services</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
@@ -241,9 +246,10 @@ const Nav = () => {
                 {/* Menu Item */}
                 <div
                   id='projectsLink'
-                  className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
-                  onMouseOver={() => onHover(2)}
+                  className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onMouseEnter={() => onHover(2)}
                   onMouseLeave={onLeave}
+                  ref={projectsLinkRef}
                 >
                   <Link href='/#projects'>Projects</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
@@ -251,9 +257,10 @@ const Nav = () => {
                 {/* Menu Item */}
                 <div
                   id='contactLink'
-                  className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
-                  onMouseOver={() => onHover(3)}
+                  className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onMouseEnter={() => onHover(3)}
                   onMouseLeave={onLeave}
+                  ref={contactLinkRef}
                 >
                   <Link href='/#contact'>Contact</Link>
                   {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
