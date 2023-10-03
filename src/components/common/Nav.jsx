@@ -1,13 +1,69 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 import elev8xLogo from '../../../public/elev8x_logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
+  // Scroll Observer
+  useEffect(() => {
+    let mainRef = document.getElementById('main')
+    let aboutRef = document.getElementById('about')
+    let servicesRef = document.getElementById('services')
+    let projectsRef = document.getElementById('projects')
+    let contactRef = document.getElementById('contact')
+
+    let aboutLinkRef = document.getElementById('aboutLink')
+    let servicesLinkRef = document.getElementById('servicesLink')
+    let projectsLinkRef = document.getElementById('projectsLink')
+    let contactLinkRef = document.getElementById('contactLink')
+
+    const handleIntersect = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.target.id == 'main' && entry.isIntersecting) {
+          observerOptions.threshold = 1.0
+          setVisiblity('invisible')
+          aboutLinkRef.classList.remove('text-white')
+        } else if (entry.target.id == 'about' && entry.isIntersecting) {
+          observerOptions.threshold = 0.25
+          onHover(0)
+          aboutLinkRef.classList.add('text-white')
+          servicesLinkRef.classList.remove('text-white')
+        } else if (entry.target.id == 'services' && entry.isIntersecting) {
+          onHover(1)
+          aboutLinkRef.classList.remove('text-white')
+          servicesLinkRef.classList.add('text-white')
+          projectsLinkRef.classList.remove('text-white')
+        } else if (entry.target.id == 'projects' && entry.isIntersecting) {
+          observerOptions.threshold
+          onHover(2)
+          servicesLinkRef.classList.remove('text-white')
+          projectsLinkRef.classList.add('text-white')
+          contactLinkRef.classList.remove('text-white')
+        } else if (entry.target.id == 'contact' && entry.isIntersecting) {
+          onHover(3)
+          projectsLinkRef.classList.remove('text-white')
+          contactLinkRef.classList.add('text-white')
+        }
+      })
+    }
+
+    let observerOptions = {
+      rootMargin: '0px',
+      threshold: 0.25,
+    }
+
+    let observer = new IntersectionObserver(handleIntersect, observerOptions)
+    observer.observe(mainRef)
+    observer.observe(aboutRef)
+    observer.observe(servicesRef)
+    observer.observe(projectsRef)
+    observer.observe(contactRef)
+  }, [])
+
   const [isOpen, setIsOpen] = useState(false)
 
   const [visiblity, setVisiblity] = useState('invisible')
@@ -45,44 +101,6 @@ const Nav = () => {
   const onLeave = () => {
     setVisiblity('invisible')
   }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY < 590) {
-        setVisiblity('invisible')
-      }
-
-      if (window.scrollY >= 590) {
-        setPosition(10)
-        setWidth(70)
-        setVisiblity('visible')
-      }
-
-      if (window.scrollY >= 1680) {
-        setPosition(95)
-        setWidth(95)
-        setVisiblity('visible')
-      }
-
-      if (window.scrollY >= 2420) {
-        setPosition(200)
-        setWidth(100)
-        setVisiblity('visible')
-      }
-
-      if (window.scrollY >= 4680) {
-        setPosition(310)
-        setWidth(90)
-        setVisiblity('visible')
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
 
   return (
     <>
@@ -193,6 +211,7 @@ const Nav = () => {
               <div className='list-none flex flex-row text-md font-poppins font-semibold'>
                 {/* Menu Item */}
                 <div
+                  id='aboutLink'
                   className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
                   onMouseOver={() => onHover(0)}
                   onMouseLeave={onLeave}
@@ -202,6 +221,7 @@ const Nav = () => {
                 </div>
                 {/* Menu Item */}
                 <div
+                  id='servicesLink'
                   className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
                   onMouseOver={() => onHover(1)}
                   onMouseLeave={onLeave}
@@ -211,6 +231,7 @@ const Nav = () => {
                 </div>
                 {/* Menu Item */}
                 <div
+                  id='projectsLink'
                   className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
                   onMouseOver={() => onHover(2)}
                   onMouseLeave={onLeave}
@@ -220,6 +241,7 @@ const Nav = () => {
                 </div>
                 {/* Menu Item */}
                 <div
+                  id='contactLink'
                   className='relative w-full py-3 px-5 hover:text-white transition-colors duration-200'
                   onMouseOver={() => onHover(3)}
                   onMouseLeave={onLeave}
