@@ -113,6 +113,7 @@ const Nav = () => {
 
   const onLeave = (e) => {
     if (e.currentTarget.classList.contains('isClicked')) {
+      e.currentTarget.classList.remove('isClicked')
       return
     } else {
       setVisiblity('invisible')
