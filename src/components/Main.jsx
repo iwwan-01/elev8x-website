@@ -5,7 +5,7 @@ import WordChanger from './common/WordChanger'
 
 const Main = () => {
   return (
-    <section id='main'>
+    <section>
       <div className='flex justify-center items-center'>
         <div className='flex flex-col-reverse md:flex-row justify-center items-center overflow-x-hidden lg:container gap-x-40 gap-y-16 px-14 pt-48 pb-24'>
           {/* Sales Text Container */}

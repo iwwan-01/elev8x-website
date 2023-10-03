@@ -41,7 +41,7 @@ const Footer = () => {
               <Link target='_blank' href='https://twitter.com/elev8xeu'>
                 <FaSquareTwitter className='w-8 h-8' width={150} height={150} />
               </Link>
-              <Link target='_blank' href='https://www.instagram.com/elev8xeu'>
+              <Link target='_blank' href='https://www.instagram.com/elev8x'>
                 <FaSquareInstagram
                   className='w-8 h-8'
                   width={150}
