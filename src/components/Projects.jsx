@@ -5,7 +5,7 @@ import budgitProjectPicture from '../../public/BudgitProjectPicture.png'
 import innotopiaProjectPicture from '../../public/InnotopiaProjectPicture.png'
 import carOfferDataExtraction from '../../public/CarOfferDataExtractionProjectPicture.png'
 
-import { FaReact, FaNodeJs } from 'react-icons/fa'
+import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
 import {
   SiSanity,
   SiMongodb,
@@ -167,6 +167,7 @@ const Projects = () => {
                   <h4 className='font-semibold text-lg'>Tech Stack:</h4>
                   {/* Tech Stack Container */}
                   <div className='flex flex-row gap-x-4'>
+                    <FaPython className='w-8 h-8' width={150} height={150} />
                     <SiAmazonaws className='w-8 h-8' width={150} height={150} />
                     <SiAmazoncloudwatch
                       className='w-8 h-8'
