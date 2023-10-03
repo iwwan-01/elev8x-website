@@ -107,10 +107,18 @@ const Nav = () => {
     }
   }
 
+  const handleClick = (e) => {
+    e.currentTarget.classList.add('isClicked')
+  }
+
   const onLeave = (e) => {
-    setVisiblity('invisible')
-    if (e.target.classList.contains('text-white')) {
-      e.target.classList.remove('text-white')
+    if (e.currentTarget.classList.contains('isClicked')) {
+      return
+    } else {
+      setVisiblity('invisible')
+      if (e.currentTarget.classList.contains('text-white')) {
+        e.currentTarget.classList.remove('text-white')
+      }
     }
   }
 
@@ -225,6 +233,7 @@ const Nav = () => {
                 <div
                   id='aboutLink'
                   className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onClick={handleClick}
                   onMouseEnter={() => onHover(0)}
                   onMouseLeave={onLeave}
                   ref={aboutLinkRef}
@@ -236,6 +245,7 @@ const Nav = () => {
                 <div
                   id='servicesLink'
                   className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onClick={handleClick}
                   onMouseEnter={() => onHover(1)}
                   onMouseLeave={onLeave}
                   ref={servicesLinkRef}
@@ -247,6 +257,7 @@ const Nav = () => {
                 <div
                   id='projectsLink'
                   className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onClick={handleClick}
                   onMouseEnter={() => onHover(2)}
                   onMouseLeave={onLeave}
                   ref={projectsLinkRef}
@@ -258,6 +269,7 @@ const Nav = () => {
                 <div
                   id='contactLink'
                   className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onClick={handleClick}
                   onMouseEnter={() => onHover(3)}
                   onMouseLeave={onLeave}
                   ref={contactLinkRef}
