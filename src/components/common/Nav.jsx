@@ -48,29 +48,29 @@ const Nav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY < 560) {
+      if (window.scrollY < 590) {
         setVisiblity('invisible')
       }
 
-      if (window.scrollY >= 560) {
+      if (window.scrollY >= 590) {
         setPosition(10)
         setWidth(70)
         setVisiblity('visible')
       }
 
-      if (window.scrollY >= 1660) {
+      if (window.scrollY >= 1680) {
         setPosition(95)
         setWidth(95)
         setVisiblity('visible')
       }
 
-      if (window.scrollY >= 2380) {
+      if (window.scrollY >= 2420) {
         setPosition(200)
         setWidth(100)
         setVisiblity('visible')
       }
 
-      if (window.scrollY >= 4660) {
+      if (window.scrollY >= 4680) {
         setPosition(310)
         setWidth(90)
         setVisiblity('visible')

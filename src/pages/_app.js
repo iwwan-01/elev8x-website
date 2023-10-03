@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }) {
     <div className={`${poppins.variable}`}>
       <Head>
         <title>elev8x | Unleash the digital potential of your business</title>
+        <link rel='icon' href='/favicon.png' />
       </Head>
       <Nav />
       <Component {...pageProps} />
