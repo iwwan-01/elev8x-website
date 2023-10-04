@@ -126,10 +126,10 @@ const Projects = () => {
                         </span>
                       </div>
                     </Link>
-                    <Link href='/#contact'>
+                    <Link href='https://innotopia-cms-prototype.vercel.app/'>
                       <div className='group flex justify-center items-center mt-4 bg-white border border-neutral-200 w-40 h-12 rounded-3xl drop-shadow-sm hover:bg-dark-blue hover:border-none transition-color duration-300'>
                         <span className='font-semibold lg:text-lg md:text-md group-hover:text-white font-poppins'>
-                          Coming Soon
+                          Preview
                         </span>
                       </div>
                     </Link>
