@@ -1,13 +1,13 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 import {
   FaLinkedin,
   FaSquareFacebook,
   FaSquareTwitter,
   FaSquareInstagram,
-} from 'react-icons/fa6'
+} from 'react-icons/fa6';
 
-import elev8xLogoWhite from '../../../public/elev8x_logo_white.svg'
+import elev8xLogoWhite from '../../../public/elev8x_logo_white.svg';
 
 const Footer = () => {
   return (
@@ -41,7 +41,7 @@ const Footer = () => {
               <Link target='_blank' href='https://twitter.com/elev8xeu'>
                 <FaSquareTwitter className='w-8 h-8' width={150} height={150} />
               </Link>
-              <Link target='_blank' href='https://www.instagram.com/elev8x'>
+              <Link target='_blank' href='https://www.instagram.com/elev8xeu'>
                 <FaSquareInstagram
                   className='w-8 h-8'
                   width={150}
@@ -76,6 +76,6 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
-export default Footer
+  );
+};
+export default Footer;

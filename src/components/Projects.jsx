@@ -1,22 +1,18 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
-import budgitProjectPicture from '../../public/BudgitProjectPicture.png'
-import innotopiaProjectPicture from '../../public/InnotopiaProjectPicture.png'
-import carOfferDataExtraction from '../../public/CarOfferDataExtractionProjectPicture.png'
+import budgitProjectPicture from '../../public/BudgitProjectPicture.png';
+import innotopiaProjectPicture from '../../public/InnotopiaProjectPicture.png';
+import kamatoGamesProjectPicture from '../../public/KamatoGamesProjectPicture.png';
 
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
+import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
 import {
   SiSanity,
   SiMongodb,
   SiExpress,
   SiNextdotjs,
-  SiAmazonaws,
-  SiAmazoncloudwatch,
-  SiAwslambda,
-  SiAmazons3,
-  SiAmazondynamodb,
-} from 'react-icons/si'
+  SiShopify,
+} from 'react-icons/si';
 
 const Projects = () => {
   return (
@@ -126,10 +122,7 @@ const Projects = () => {
                         </span>
                       </div>
                     </Link>
-                    <Link
-                      href='https://innotopia-cms-prototype.vercel.app/'
-                      target='_blank'
-                    >
+                    <Link href='https://www.innotopia.tech/' target='_blank'>
                       <div className='group flex justify-center items-center mt-4 bg-white border border-neutral-200 w-40 h-12 rounded-3xl drop-shadow-sm hover:bg-dark-blue hover:border-none transition-color duration-300'>
                         <span className='font-semibold lg:text-lg md:text-md group-hover:text-white font-poppins'>
                           Preview
@@ -154,36 +147,21 @@ const Projects = () => {
             <div className='flex flex-col overflow-hidden border rounded-3xl bg-white border-neutral-200 h-full w-full gap-y-2 p-8 font-poppins'>
               <div className='flex lg:flex-row flex-col-reverse gap-y-10 gap-x-12 p-4'>
                 <div className='flex flex-col gap-y-4 w-full'>
-                  <h1 className='font-bold text-4xl'>
-                    Car Advertisements Data Extraction
-                  </h1>
-                  <h3 className='font-semibold text-lg'>Web Scraping</h3>
+                  <h1 className='font-bold text-4xl'>Kamato Games</h1>
+                  <h3 className='font-semibold text-lg'>E-Commerce Store</h3>
                   <p className='font-normal text-md'>
-                    The solution ensures efficient data extraction, processing,
-                    and storage, while offering features such as price history
-                    tracking, notifications for specific offers, and data
-                    enrichment with safety ratings and fuel efficiency
-                    information. It implements a serverless architecture to
-                    provide cost-efficiency, reliability, and continuous
-                    monitoring to ensure the processes are executed correctly.
+                    Kamato Games is a physical store located in Asenovgrad,
+                    Bulgaria and it is your go-to destination for all things
+                    collectible card games. The goal of the e-commerce store is
+                    to elevate the business to the next level by increasing its
+                    online presence. The development process includes creating
+                    design, addition of products, innovation and automation of
+                    the business processes of running a physical store.
                   </p>
                   <h4 className='font-semibold text-lg'>Tech Stack:</h4>
                   {/* Tech Stack Container */}
                   <div className='flex flex-row gap-x-4'>
-                    <FaPython className='w-8 h-8' width={150} height={150} />
-                    <SiAmazonaws className='w-8 h-8' width={150} height={150} />
-                    <SiAmazoncloudwatch
-                      className='w-8 h-8'
-                      width={150}
-                      height={150}
-                    />
-                    <SiAwslambda className='w-8 h-8' width={150} height={150} />
-                    <SiAmazons3 className='w-8 h-8' width={150} height={150} />
-                    <SiAmazondynamodb
-                      className='w-8 h-8'
-                      width={150}
-                      height={150}
-                    />
+                    <SiShopify className='w-8 h-8' width={150} height={150} />
                   </div>
                   <div className='flex flex-row gap-x-4'>
                     {/* CTA */}
@@ -194,10 +172,7 @@ const Projects = () => {
                         </span>
                       </div>
                     </Link>
-                    <Link
-                      href='https://github.com/tyordanovv/CarPriceProject'
-                      target='_blank'
-                    >
+                    <Link href='https://kamatogames.com' target='_blank'>
                       <div className='group flex justify-center items-center mt-4 bg-white border border-neutral-200 w-40 h-12 rounded-3xl drop-shadow-sm hover:bg-dark-blue hover:border-none transition-color duration-300'>
                         <span className='font-semibold lg:text-lg md:text-md group-hover:text-white font-poppins'>
                           Preview
@@ -209,8 +184,8 @@ const Projects = () => {
                 <div className='flex justify-center items-center rounded-3xl border drop-shadow-md border-neutral-200 w-full overflow-hidden'>
                   <Image
                     className='w-full h-full object-contain'
-                    src={carOfferDataExtraction}
-                    alt='Car Offer Data Extraction'
+                    src={kamatoGamesProjectPicture}
+                    alt='Kamato Games Project Picture'
                     width={1920}
                     height={1080}
                   />
@@ -221,6 +196,6 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
-export default Projects
+  );
+};
+export default Projects;
