@@ -1,9 +1,22 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import { useState } from 'react';
 
-import WordChanger from './common/WordChanger'
+import Image from 'next/image';
+import Link from 'next/link';
+
+import WordChanger from './common/WordChanger';
 
 const Main = () => {
+  const [isOn, setIsOn] = useState(false);
+  const [isTurned, setIsTurned] = useState(false);
+
+  const handleIsOn = () => {
+    setIsOn(!isOn);
+  };
+
+  const handleIsTurned = () => {
+    setIsTurned(!isTurned);
+  };
+
   return (
     <section id='main'>
       <div className='flex justify-center items-center'>
@@ -31,13 +44,27 @@ const Main = () => {
           <div className='flex justify-center items-center lg:pr-8'>
             <div className='rounded-full border w-[200px] h-[350px] relative'></div>
             <div className='absolute flex flex-col gap-y-4'>
-              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-dark-blue border-r-[60px] border-r-transparent hover:border-b-orange transition-colors duration-300'></div>
-              <div className='w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-dark-blue border-r-[60px] border-r-transparent hover:rotate-180 transition-transform duration-300'></div>
+              <div
+                onClick={handleIsOn}
+                className={
+                  isOn
+                    ? 'w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-orange border-r-[60px] border-r-transparent'
+                    : 'w-0 h-0 border-l-[60px] border-l-transparent border-b-[100px] border-b-dark-blue border-r-[60px] border-r-transparent hover:border-b-orange transition-colors duration-300'
+                }
+              ></div>
+              <div
+                onClick={handleIsTurned}
+                className={
+                  isTurned
+                    ? 'w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-dark-blue border-r-[60px] border-r-transparent rotate-180'
+                    : 'w-0 h-0 border-l-[60px] border-l-transparent border-t-[100px] border-t-dark-blue border-r-[60px] border-r-transparent hover:rotate-180 transition-transform duration-300'
+                }
+              ></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
-export default Main
+  );
+};
+export default Main;
