@@ -3,8 +3,9 @@ import Image from 'next/image';
 import {
   FaLinkedin,
   FaSquareFacebook,
-  FaSquareTwitter,
+  FaSquareXTwitter,
   FaSquareInstagram,
+  FaHouse,
 } from 'react-icons/fa6';
 
 import elev8xLogoWhite from '../../../public/elev8x_logo_white.svg';
@@ -31,7 +32,7 @@ const Footer = () => {
               >
                 <FaLinkedin className='w-8 h-8' width={150} height={150} />
               </Link>
-              <Link target='_blank' href='https://www.facebook.com/elev8x/'>
+              <Link target='_blank' href='https://www.facebook.com/elev8x.eu/'>
                 <FaSquareFacebook
                   className='w-8 h-8'
                   width={150}
@@ -39,7 +40,11 @@ const Footer = () => {
                 />
               </Link>
               <Link target='_blank' href='https://twitter.com/elev8xeu'>
-                <FaSquareTwitter className='w-8 h-8' width={150} height={150} />
+                <FaSquareXTwitter
+                  className='w-8 h-8'
+                  width={150}
+                  height={150}
+                />
               </Link>
               <Link target='_blank' href='https://www.instagram.com/elev8xeu'>
                 <FaSquareInstagram
@@ -52,24 +57,36 @@ const Footer = () => {
             <h3>{new Date().getFullYear()}© elev8x. All rights reserved.</h3>
           </div>
           {/* Right Container */}
-          <div className='flex flex-col text-center gap-y-4 p-8'>
+          <div className='flex flex-col text-center gap-y-8 p-8'>
+            <div className='flex flex-col justify-center'>
+              <h1 className='font-poppins font-bold whitespace-nowrap text-white text-xl'>
+                Office Address
+              </h1>
+              <h4 className='font-poppins text-white text-sm font-light'>
+                g.k Vuzrazhdane, 1A
+              </h4>
+              <h4 className='font-poppins text-white text-sm font-light'>
+                8000, Burgas, Bulgaria
+              </h4>
+            </div>
+
             <div>
-              <h1 className='font-poppins font-bold whitespace-nowrap text-white text-2xl'>
+              <h1 className='font-poppins font-bold whitespace-nowrap text-white text-xl'>
                 Working Hours
               </h1>
-            </div>
-            <div className='flex flex-col font-poppins whitespace-nowrap text-white text-md gap-y-2'>
-              <div className='flex flex-col gap-y-1'>
-                <h3 className='font-semibold'>Monday - Friday</h3>
-                <h4 className='font-light'>08:00AM - 6:00PM</h4>
-              </div>
-              <div className='flex flex-col gap-y-1'>
-                <h3 className='font-semibold'>Saturday</h3>
-                <h4 className='font-light'>10:00AM - 4:00PM</h4>
-              </div>
-              <div className='flex flex-col gap-y-1'>
-                <h3 className='font-semibold'>Sunday</h3>
-                <h4 className='font-light'>Closed</h4>
+              <div className='flex flex-col font-poppins whitespace-nowrap text-white text-sm gap-y-2'>
+                <div className='flex flex-col gap-y-1'>
+                  <h3 className='font-semibold'>Monday - Friday</h3>
+                  <h4 className='font-light'>08:00AM - 6:00PM</h4>
+                </div>
+                <div className='flex flex-col gap-y-1'>
+                  <h3 className='font-semibold'>Saturday</h3>
+                  <h4 className='font-light'>10:00AM - 4:00PM</h4>
+                </div>
+                <div className='flex flex-col gap-y-1'>
+                  <h3 className='font-semibold'>Sunday</h3>
+                  <h4 className='font-light'>Closed</h4>
+                </div>
               </div>
             </div>
           </div>

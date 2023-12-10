@@ -30,14 +30,24 @@ const Main = () => {
             <h2 className='text-black text-xl text-left font-poppins font-semibold mt-20 lg:mt-10 md:mt-8'>
               Unleash the digital potential of your business.
             </h2>
-            {/* CTA */}
-            <Link href='/#contact'>
-              <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-105 transition-transform duration-300'>
-                <span className='uppercase font-bold text-white text-lg font-poppins'>
-                  Get started
-                </span>
-              </div>
-            </Link>
+            <div className='flex flex-row gap-x-4'>
+              {/* CTA */}
+              <Link target='_blank' href='https://calendly.com/elev8x'>
+                <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-105 transition-transform duration-300'>
+                  <span className='uppercase font-bold text-white text-lg font-poppins'>
+                    Let's Meet
+                  </span>
+                </div>
+              </Link>
+              {/* CTA */}
+              <Link href='/#contact'>
+                <div className='group flex justify-center items-center mt-2 rounded-full border border-neutral-200 w-44 h-11 hover:scale-105 transition-transform duration-300'>
+                  <span className='uppercase font-bold text-black text-lg font-poppins'>
+                    Contact Us
+                  </span>
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Hero Container */}

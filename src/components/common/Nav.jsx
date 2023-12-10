@@ -1,127 +1,146 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react';
 
-import elev8xLogo from '../../../public/elev8x_logo.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import elev8xLogo from '../../../public/elev8x_logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
-  const aboutLinkRef = useRef()
-  const servicesLinkRef = useRef()
-  const projectsLinkRef = useRef()
-  const contactLinkRef = useRef()
+  const aboutLinkRef = useRef();
+  const servicesLinkRef = useRef();
+  const projectsLinkRef = useRef();
+  const testimonialsLinkRef = useRef();
+  const contactLinkRef = useRef();
 
   // Scroll Intersection Observer
   useEffect(() => {
-    let mainRef = document.getElementById('main')
-    let aboutRef = document.getElementById('about')
-    let servicesRef = document.getElementById('services')
-    let projectsRef = document.getElementById('projects')
-    let contactRef = document.getElementById('contact')
+    let mainRef = document.getElementById('main');
+    let aboutRef = document.getElementById('about');
+    let servicesRef = document.getElementById('services');
+    let projectsRef = document.getElementById('projects');
+    let testimonialsRef = document.getElementById('testimonials');
+    let contactRef = document.getElementById('contact');
 
     const handleIntersect = (entries) => {
       entries.forEach((entry) => {
         if (entry.target.id == 'main' && entry.isIntersecting) {
-          observerOptions.threshold = 1.0
-          setVisiblity('invisible')
-          aboutLinkRef.current.classList.remove('text-white')
-          servicesLinkRef.current.classList.remove('text-white')
-          projectsLinkRef.current.classList.remove('text-white')
-          contactLinkRef.current.classList.remove('text-white')
+          observerOptions.threshold = 1.0;
+          setVisiblity('invisible');
+          aboutLinkRef.current.classList.remove('text-white');
+          servicesLinkRef.current.classList.remove('text-white');
+          projectsLinkRef.current.classList.remove('text-white');
+          contactLinkRef.current.classList.remove('text-white');
         } else if (entry.target.id == 'about' && entry.isIntersecting) {
-          observerOptions.threshold = 0.25
-          onHover(0)
+          observerOptions.threshold = 0.25;
+          onHover(0);
         } else if (entry.target.id == 'services' && entry.isIntersecting) {
-          onHover(1)
+          onHover(1);
         } else if (entry.target.id == 'projects' && entry.isIntersecting) {
-          observerOptions.threshold
-          onHover(2)
+          observerOptions.threshold;
+          onHover(2);
+        } else if (entry.target.id == 'testimonials' && entry.isIntersecting) {
+          onHover(3);
         } else if (entry.target.id == 'contact' && entry.isIntersecting) {
-          onHover(3)
+          onHover(4);
         }
-      })
-    }
+      });
+    };
 
     let observerOptions = {
       rootMargin: '0px',
       threshold: 0.25,
-    }
+    };
 
-    let observer = new IntersectionObserver(handleIntersect, observerOptions)
-    observer.observe(mainRef)
-    observer.observe(aboutRef)
-    observer.observe(servicesRef)
-    observer.observe(projectsRef)
-    observer.observe(contactRef)
-  }, [])
+    let observer = new IntersectionObserver(handleIntersect, observerOptions);
+    observer.observe(mainRef);
+    observer.observe(aboutRef);
+    observer.observe(servicesRef);
+    observer.observe(projectsRef);
+    observer.observe(testimonialsRef);
+    observer.observe(contactRef);
+  }, []);
 
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
-  const [visiblity, setVisiblity] = useState('invisible')
-  const [position, setPosition] = useState(0)
-  const [width, setWidth] = useState(0)
+  const [visiblity, setVisiblity] = useState('invisible');
+  const [position, setPosition] = useState(0);
+  const [width, setWidth] = useState(0);
 
   const toggleMenu = () => {
-    setIsOpen((prev) => !prev)
-  }
+    setIsOpen((prev) => !prev);
+  };
 
   const onHover = (index) => {
-    setVisiblity('visible')
+    setVisiblity('visible');
 
     if (index == 0) {
-      setPosition(10)
-      setWidth(70)
-      aboutLinkRef.current.classList.add('text-white')
-      servicesLinkRef.current.classList.remove('text-white')
-      projectsLinkRef.current.classList.remove('text-white')
-      contactLinkRef.current.classList.remove('text-white')
+      setPosition(10);
+      setWidth(70);
+      aboutLinkRef.current.classList.add('text-white');
+      servicesLinkRef.current.classList.remove('text-white');
+      projectsLinkRef.current.classList.remove('text-white');
+      testimonialsLinkRef.current.classList.remove('text-white');
+      contactLinkRef.current.classList.remove('text-white');
     }
 
     if (index == 1) {
-      setPosition(95)
-      setWidth(95)
-      servicesLinkRef.current.classList.add('text-white')
-      aboutLinkRef.current.classList.remove('text-white')
-      projectsLinkRef.current.classList.remove('text-white')
-      contactLinkRef.current.classList.remove('text-white')
+      setPosition(95);
+      setWidth(95);
+      servicesLinkRef.current.classList.add('text-white');
+      aboutLinkRef.current.classList.remove('text-white');
+      projectsLinkRef.current.classList.remove('text-white');
+      testimonialsLinkRef.current.classList.remove('text-white');
+      contactLinkRef.current.classList.remove('text-white');
     }
 
     if (index == 2) {
-      setPosition(200)
-      setWidth(100)
-      projectsLinkRef.current.classList.add('text-white')
-      aboutLinkRef.current.classList.remove('text-white')
-      servicesLinkRef.current.classList.remove('text-white')
-      contactLinkRef.current.classList.remove('text-white')
+      setPosition(200);
+      setWidth(100);
+      projectsLinkRef.current.classList.add('text-white');
+      aboutLinkRef.current.classList.remove('text-white');
+      servicesLinkRef.current.classList.remove('text-white');
+      testimonialsLinkRef.current.classList.remove('text-white');
+      contactLinkRef.current.classList.remove('text-white');
     }
 
     if (index == 3) {
-      setPosition(310)
-      setWidth(90)
-      contactLinkRef.current.classList.add('text-white')
-      aboutLinkRef.current.classList.remove('text-white')
-      servicesLinkRef.current.classList.remove('text-white')
-      projectsLinkRef.current.classList.remove('text-white')
+      setPosition(310);
+      setWidth(125);
+      testimonialsLinkRef.current.classList.add('text-white');
+      aboutLinkRef.current.classList.remove('text-white');
+      servicesLinkRef.current.classList.remove('text-white');
+      projectsLinkRef.current.classList.remove('text-white');
+      contactLinkRef.current.classList.remove('text-white');
     }
-  }
+
+    if (index == 4) {
+      setPosition(455);
+      setWidth(90);
+      contactLinkRef.current.classList.add('text-white');
+      aboutLinkRef.current.classList.remove('text-white');
+      servicesLinkRef.current.classList.remove('text-white');
+      projectsLinkRef.current.classList.remove('text-white');
+      testimonialsLinkRef.current.classList.remove('text-white');
+    }
+  };
 
   const handleClick = (e) => {
-    e.currentTarget.classList.add('isClicked')
-  }
+    e.currentTarget.classList.add('isClicked');
+  };
 
   const onLeave = (e) => {
     if (e.currentTarget.classList.contains('isClicked')) {
-      e.currentTarget.classList.remove('isClicked')
-      return
+      e.currentTarget.classList.remove('isClicked');
+      return;
     } else {
-      setVisiblity('invisible')
+      setVisiblity('invisible');
       if (e.currentTarget.classList.contains('text-white')) {
-        e.currentTarget.classList.remove('text-white')
+        e.currentTarget.classList.remove('text-white');
       }
     }
-  }
+  };
 
   return (
     <>
@@ -192,6 +211,10 @@ const Nav = () => {
 
                 <Link href='/#projects' onClick={() => setIsOpen(!isOpen)}>
                   <span>Projects</span>
+                </Link>
+
+                <Link href='/#testimonials' onClick={() => setIsOpen(!isOpen)}>
+                  <span>Testimonials</span>
                 </Link>
 
                 <Link href='/#contact' onClick={() => setIsOpen(!isOpen)}>
@@ -268,10 +291,22 @@ const Nav = () => {
                 </div>
                 {/* Menu Item */}
                 <div
-                  id='contactLink'
+                  id='testimonialsLink'
                   className='relative w-full py-3 px-5 transition-colors duration-200'
                   onClick={handleClick}
                   onMouseEnter={() => onHover(3)}
+                  onMouseLeave={onLeave}
+                  ref={testimonialsLinkRef}
+                >
+                  <Link href='/#testimonials'>Testimonials</Link>
+                  {/* <div className='bg-orange h-0.5 w-0 absolute group-hover:w-full transition-all duration-300'></div> */}
+                </div>
+                {/* Menu Item */}
+                <div
+                  id='contactLink'
+                  className='relative w-full py-3 px-5 transition-colors duration-200'
+                  onClick={handleClick}
+                  onMouseEnter={() => onHover(4)}
                   onMouseLeave={onLeave}
                   ref={contactLinkRef}
                 >
@@ -284,6 +319,6 @@ const Nav = () => {
         </div>
       </div>
     </>
-  )
-}
-export default Nav
+  );
+};
+export default Nav;

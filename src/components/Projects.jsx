@@ -5,7 +5,7 @@ import budgitProjectPicture from '../../public/BudgitProjectPicture.png';
 import innotopiaProjectPicture from '../../public/InnotopiaProjectPicture.png';
 import kamatoGamesProjectPicture from '../../public/KamatoGamesProjectPicture.png';
 
-import { FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
 import {
   SiSanity,
   SiMongodb,
