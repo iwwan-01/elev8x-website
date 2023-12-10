@@ -78,12 +78,12 @@ const Testimonials = () => {
                       <div className='px-8 py-4'>
                         <p className='font-poppins text-sm font-normal'>
                           The site sports a fresh new identity and Indietopia
-                          couldn’t be happier with the result. Elev8x guided us
-                          through the process with a crafty attitude and clear
-                          communication. They made the entire team part of the
-                          design process, which is a rare quality. We are happy
-                          with the results and our team can count on a strong
-                          online presence with the new website.
+                          couldn&apos;t be happier with the result. Elev8x
+                          guided us through the process with a crafty attitude
+                          and clear communication. They made the entire team
+                          part of the design process, which is a rare quality.
+                          We are happy with the results and our team can count
+                          on a strong online presence with the new website.
                         </p>
                       </div>
                     </div>
@@ -113,15 +113,15 @@ const Testimonials = () => {
                       {/* Text */}
                       <div className='px-8 py-4'>
                         <p className='font-poppins text-sm font-normal'>
-                          Elev8x's dedication to our project, from its inception
-                          to ongoing support, has been truly satisfactory. Their
-                          professionalism and punctuality ensured a smooth
-                          course from concept to the final website. Even when we
-                          faced uncertainty in some aspects, Elev8x's
-                          proactivity showed as they presented multiple
-                          solutions. Their unwavering reliability and
-                          dependability make them a top choice. I can’t
-                          recommend their services enough.
+                          Elev8x&apos;s dedication to our project, from its
+                          inception to ongoing support, has been truly
+                          satisfactory. Their professionalism and punctuality
+                          ensured a smooth course from concept to the final
+                          website. Even when we faced uncertainty in some
+                          aspects, Elev8x&apos;s proactivity showed as they
+                          presented multiple solutions. Their unwavering
+                          reliability and dependability make them a top choice.
+                          I can’t recommend their services enough.
                         </p>
                       </div>
                     </div>

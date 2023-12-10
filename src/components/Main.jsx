@@ -35,7 +35,7 @@ const Main = () => {
               <Link target='_blank' href='https://calendly.com/elev8x'>
                 <div className='group flex justify-center items-center mt-2 rounded-full bg-orange w-44 h-11 hover:scale-105 transition-transform duration-300'>
                   <span className='uppercase font-bold text-white text-lg font-poppins'>
-                    Let's Meet
+                    Let&apos;s Meet
                   </span>
                 </div>
               </Link>
