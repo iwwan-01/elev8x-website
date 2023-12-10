@@ -55,7 +55,7 @@ const Testimonials = () => {
                     <div className='flex flex-col text-right font-poppins whitespace-nowrap px-8 py-4'>
                       <h3 className='text-sm font-medium'>Dimitar Maronov</h3>
                       <h3 className='text-sm font-semilight'>
-                        CEO | Kamato Games
+                        CEO @ Kamato Games
                       </h3>
                     </div>
                   </div>
@@ -91,7 +91,7 @@ const Testimonials = () => {
                     <div className='flex flex-col text-right font-poppins whitespace-nowrap px-8 py-4'>
                       <h3 className='text-sm font-medium'>Merijn De Boer</h3>
                       <h3 className='text-sm font-semilight'>
-                        CEO | Indietopia
+                        CEO @ Indietopia
                       </h3>
                     </div>
                   </div>
@@ -129,7 +129,7 @@ const Testimonials = () => {
                     <div className='flex flex-col text-right font-poppins whitespace-nowrap px-8 py-4'>
                       <h3 className='text-sm font-medium'>Kristiyan Petrov</h3>
                       <h3 className='text-sm font-semilight'>
-                        Project Manager | Indietopia
+                        Project Manager @ Indietopia
                       </h3>
                     </div>
                   </div>

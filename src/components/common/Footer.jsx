@@ -20,6 +20,7 @@ const Footer = () => {
           <div className='flex flex-col font-poppins justify-center items-center text-sm font-semibold text-white gap-y-8 p-8'>
             <Image
               src={elev8xLogoWhite}
+              alt='Elev8x Logo'
               width={150}
               height={150}
               color='white'
