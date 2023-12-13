@@ -33,8 +33,16 @@ const Footer = () => {
               >
                 <FaLinkedin className='w-8 h-8' width={150} height={150} />
               </Link>
-              <Link target='_blank' href='https://www.facebook.com/elev8x.eu/'>
+              {/* <Link target='_blank' href='https://www.facebook.com/elev8x.eu/'>
                 <FaSquareFacebook
+                  className='w-8 h-8'
+                  width={150}
+                  height={150}
+                />
+              </Link> */}
+
+              <Link target='_blank' href='https://www.instagram.com/elev8xeu'>
+                <FaSquareInstagram
                   className='w-8 h-8'
                   width={150}
                   height={150}
@@ -42,13 +50,6 @@ const Footer = () => {
               </Link>
               <Link target='_blank' href='https://twitter.com/elev8xeu'>
                 <FaSquareXTwitter
-                  className='w-8 h-8'
-                  width={150}
-                  height={150}
-                />
-              </Link>
-              <Link target='_blank' href='https://www.instagram.com/elev8xeu'>
-                <FaSquareInstagram
                   className='w-8 h-8'
                   width={150}
                   height={150}
